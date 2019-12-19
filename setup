@@ -1,0 +1,7 @@
+. bash/rc.bash
+
+[[ ! $PWD =~ /repos/dotfiles$ ]] && echo Should be in ~/repos/dotfiles && exit 1
+
+for file in $(ls -1 setup.d); do
+  . setup.d/$file
+done
