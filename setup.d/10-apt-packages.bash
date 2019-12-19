@@ -1,5 +1,5 @@
 brew_cmd=$(which brew)
-apt_cmd=$(which apt)
+apt_cmd=$(which apt-get)
 
 if [[ ! -z $apt_cmd ]]; then
   sudo apt update
@@ -30,9 +30,9 @@ apt_packages=(
 )
 
 if [[ ! -z $apt_cmd ]]; then
-  sudo apt install -y "${apt_packages[*]}"
+  sudo apt install -y ${apt_packages[*]}
 elif [[ ! -z $brew_cmd ]]; then
-  brew install "${brew_packages[*]}"
+  brew install ${brew_packages[*]}
 else
   echo "No package manager found!"
   exit 1;
