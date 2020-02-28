@@ -14,6 +14,7 @@ export PATH=\
 $HOME/bin:\
 $HOME/go/bin:\
 $HOME/.cargo/bin:\
+/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/bin:\
 /usr/local/go/bin:\
 /usr/local/tinygo/bin:\
 /usr/local/bin:\
@@ -24,11 +25,12 @@ $HOME/.cargo/bin:\
 /sbin:\
 /bin
 
+HISTCONTROL=ignoredups:ignorespace
+set -o vi
 set -o notify
 set -o noclobber
 set -o ignoreeof
 set bell-style none
-set -o vi
 shopt -s checkwinsize
 shopt -s histappend
 shopt -s expand_aliases
