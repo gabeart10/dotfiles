@@ -29,6 +29,9 @@ set noincsearch
 set noshowmatch
 set linebreak
 
+" system clipboard (+) support need to install vim-gtk3
+set clipboard=unnamedplus
+
 " source $PWD/.vimrc securely
 set exrc
 set secure
