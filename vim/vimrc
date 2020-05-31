@@ -36,6 +36,10 @@ set clipboard=unnamedplus
 set exrc
 set secure
 
+" column stuff if needed
+" set colorcolumn=110
+" highlight ColorColumn ctermbg=darkgrey
+
 " fixes 'Press ENTER or type command to continue'
 set shortmess=a
 set cmdheight=1
