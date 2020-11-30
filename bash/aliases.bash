@@ -8,3 +8,4 @@ alias bashcolors="$EDITOR $HOME/repos/dotfiles/bash/colors.bash"
 alias weather="curl wttr.in"
 alias c="xclip"
 alias v="xclip -o"
+alias get_idf='. $HOME/esp/esp-idf/export.sh'
