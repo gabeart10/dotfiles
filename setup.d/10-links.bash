@@ -13,3 +13,6 @@ mkdir -p ~/.vim/autoload
 cp $PWD/vim/autoload/plug.vim ~/.vim/autoload
 ln -fs $PWD/vim/vimrc ~/.vimrc
 vim +':PlugInstall' +':q!' +':q!'
+#alacritty links
+mkdir -p ~/.config/alacritty
+ln -fs $PWD/alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml
