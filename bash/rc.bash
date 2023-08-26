@@ -12,11 +12,6 @@ unset HISTFILE
 
 export PATH=\
 $HOME/bin:\
-$HOME/go/bin:\
-$HOME/.cargo/bin:\
-/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/bin:\
-/usr/local/go/bin:\
-/usr/local/tinygo/bin:\
 /usr/local/bin:\
 /usr/local/sbin:\
 /usr/sbin:\
@@ -37,7 +32,7 @@ shopt -s expand_aliases
 
 [[ $PLATFORM != mac ]] && shopt -s globstar
 
-for t in aliases functions colors private; do
+for t in aliases functions private; do
   [[ -f ~/.bash_$t ]] && . ~/.bash_$t
 done
 
@@ -71,11 +66,3 @@ if [ $PLATFORM == mac ]; then
     . $(brew --prefix)/etc/bash_completion
   fi
 fi
-
-export LESS_TERMCAP_mb=$(sol m)
-export LESS_TERMCAP_md=$(sol y)
-export LESS_TERMCAP_me=$'\e[0m'
-export LESS_TERMCAP_se=$'\e[0m'
-export LESS_TERMCAP_so=$(sol b)
-export LESS_TERMCAP_ue=$'\e[0m'
-export LESS_TERMCAP_us=$(sol v)
